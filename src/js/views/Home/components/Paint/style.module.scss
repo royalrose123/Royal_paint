@@ -6,7 +6,89 @@
     opacity: 1;
 }
 
-.home-paint-tool-draw{
-    width: 60px;
+.home-paint-header-action-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin: 8px;
+
+    &:hover{
+        color: aqua
+    }
+
+    .home-paint-header-action-download{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        color: inherit;
+
+    }
+
+    .home-paint-header-action-icon{
+        width: 42px;
+        height: 40px;
+        margin: 8px;
+        cursor: pointer;
+
+    }
+
+    .home-paint-header-action-text{
+        font-size: 18px;
+        font-weight: bolder;
+    }
+}
+    
+.home-paint-tool-icon{
+    width: 42px;
     height: 40px;
+    margin: 8px;
+    padding-bottom: 8px; 
+    cursor: pointer;
+
+    &[data-is-active="true"] {
+            // background-color: transparent;
+            border-bottom: 1px solid black;
+      }
+}
+
+.home-paint-tool-size-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 8px;
+
+    .home-paint-tool-size{
+        width: 58px;
+        height: 32px;
+        margin: 8px;
+        font-size: 22px;
+        text-align: center;
+        background: #E8E8E8 0% 0% no-repeat padding-box;
+        border-radius: 24px;
+        border: none;
+        padding: 8px;
+
+        &:focus{
+            outline: none;
+        }
+    }
+}
+
+.home-paint-tool-color-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 8px;
+
+    .home-paint-tool-color{
+        width: 48px;
+        height: 24px;
+        margin: 8px;
+    }
 }

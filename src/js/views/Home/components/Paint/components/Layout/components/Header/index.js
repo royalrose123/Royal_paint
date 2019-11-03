@@ -21,12 +21,13 @@ export const defaultProps = {
 }
 
 function Header (props) {
-  // const { prop } = props
+  const { children } = props
 
   useEffect(() => {})
 
   return (
     <div className={cx('home-paint-header')}>
+      {children}
     </div>
   )
 }
